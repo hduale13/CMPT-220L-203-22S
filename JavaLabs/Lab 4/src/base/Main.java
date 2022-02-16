@@ -1,12 +1,13 @@
 package base;
-
-public class Main {
+import java.util.Scanner;
+public class Main
+{
     /**
      * # Lab Four
      * ---
-     *
+     * <p>
      * For this lab we're going to be making and using a bunch of functions.
-     *
+     * <p>
      * Our Goals are:
      * - Switch Case
      * - Looping
@@ -14,24 +15,92 @@ public class Main {
      * - Combining functions
      * - Structuring solutions
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         // Give me an example of you using switch case.
-        // Give me an example of you using a for loop
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("what is your favorite month (number form): ");
+        int month = sc.nextInt();
+        String monthString;
+        switch (month)
+        {
+            case 1:
+                monthString = "January";
+                break;
+            case 2:
+                monthString = "Febuary";
+                break;
+            case 3:
+                monthString = "March";
+                break;
+            case 4:
+                monthString = "April";
+                break;
+            case 5:
+                monthString = "May";
+                break;
+            case 6:
+                monthString = "June";
+                break;
+            case 7:
+                monthString = "July";
+                break;
+            case 8:
+                monthString = "August";
+                break;
+            case 9:
+                monthString = "September";
+                break;
+            case 10:
+                monthString = "October";
+                break;
+            case 11:
+                monthString = "November";
+                break;
+            case 12:
+                monthString = "December";
+                break;
+            default:
+                monthString = "Invalid number";
+        }
+        System.out.println("Your favorite month is " + monthString);
+        sc.close();
+        
+        for (int i = 0; i < 5; i++) 
+        {
+            System.out.println("...");
+        }    
+
+// Give me an example of you using a for loop 
+        for (int i = 0; i < 10; i++) 
+        {
+            System.out.println("This is software development #" + i);
+        }
         // Give me an example of you using a while loop
+        int i= 0;
+        while (i < 15)
+        {
+            System.out.println("This is " + i + "My Name is Hodo Duale!");
+            i++;
+        }
+    
     }
-    // For the following todos you'll probably want to define them below and then call them from the main function above.
-
-    /**
-     * I want you to write a function that will take in a number and raise it to the power given.
-     * For example if given the numbers 2 and 3. The math that the function should do is 2^3
-     * and should print out or return 8. Print the output.
-     */
-
+}    
     /**
      * I want you to write a function that will take in a list and see how many times a given number is in the list.
      * For example if the array given is [2,3,5,2,3,6,7,8,2] and the number given is 2 the function should print out
      * or return 3. Print the output.
      */
+    
+    
+        System.out.println("Choose a number from the list to count: ");
+        Scanner sc = new Scanner(System.in);
+        String[] array1 = {"2", "3", "5", "2", "3", "6", "7", "8", "2"};
+        sc.close();
+        
+    
+        
 
     /**
      * Create a function named summation that will take in an int[ ] and return an int.
@@ -39,6 +108,7 @@ public class Main {
      * Once that’s done print or return the answer. Print the output
      */
 
+    int Summation =  
     /**
      * Give me a function that gives the answer to the pythagorean theorem.
      * I'd like you to reuse the exponent function from above as well as the functions below to make your function.
@@ -51,13 +121,5 @@ public class Main {
      * Once that’s done print or return the answer. Print the output
      */
 
-    int addition(int a, int b) {
-        int answer = a + b;
-        return answer;
-    }
 
-    int division(int a, int b) {
-        int answer = a / b;
-        return answer;
-    }
-}
+  
